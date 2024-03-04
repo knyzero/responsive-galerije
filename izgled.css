@@ -1,0 +1,48 @@
+body {
+    background-color: #fff;
+    font-family: sans-serif; 
+  }
+  
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  #flexbox1 > img {
+    width: 17%;
+    height: 17%;
+    margin: 10px;
+    background-color: blue;
+  }
+  .text {
+    font-size: 25px; 
+  }
+  
+/* Media Query za telefone */
+@media screen and (max-width: 600px) {
+    .gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #flexbox1 > img {
+      width: 60%; 
+      margin: 25px;
+    }
+    .naslov {
+        text-align: center; 
+      }
+  }
+  
+  /* Media Query za tablete */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {  
+      #flexbox1 > img {
+        width: 25%; 
+        margin: 10px;
+      }
+  }
+  
+  
